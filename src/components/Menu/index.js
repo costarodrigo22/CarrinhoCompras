@@ -1,11 +1,13 @@
 import { useContext } from 'react';
 
+//Importação do contexto.
 import {GetProducts} from '../App';
 
 import {Container, Counter} from './style';
 import {Link} from 'react-router-dom';
 
 export default function Menu(){
+  //Uso do contexto importado neste componente.
   const counter = useContext(GetProducts);
 
   return(
